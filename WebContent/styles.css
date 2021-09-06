@@ -1,0 +1,472 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+}
+
+/* Header */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  background: linear-gradient(101.22deg, #ffda01 2.49%, #ffc700 100.93%);
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_link {
+  margin-left: 2rem;
+  position: relative;
+  font-size: 1rem;
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav_link.basket {
+  margin-bottom: 7px;
+}
+.nav_link.basket > span {
+  margin-left: 3px;
+}
+
+.nav_link:hover {
+  border-bottom: 2px solid black;
+  padding: 0 0 4px;
+}
+
+.content-img {
+  width: 900px;
+  height: 420px;
+  margin: 0 130px;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.content-text {
+  margin: 0 400px;
+  margin-top: 5px;
+}
+
+.form-search-container {
+  width: 800px;
+  height: 60px;
+  margin: 13px auto;
+  border-radius: 32px;
+  background-color: white;
+}
+
+.form-search {
+  display: flex;
+}
+
+.search-label-container {
+  width: 250px;
+  height: 60px;
+  border-radius: 32px;
+}
+
+.search-label-container2 {
+  width: 150px;
+  height: 60px;
+  border-radius: 32px;
+}
+
+.label-of-search-form {
+  width: 250px;
+  height: 60px;
+  text-decoration: none;
+  border-radius: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.label-of-search-form2 {
+  width: 150px;
+  height: 60px;
+  text-decoration: none;
+  border-radius: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.label-title {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 35px;
+  font-weight: 700;
+}
+
+.input-of-search-form {
+  margin: 1px 15px;
+  margin-bottom: 5px;
+  height: 23px;
+  width: 220px;
+  padding-left: 20px;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.input-of-search-form2 {
+  margin: 1px 10px;
+  height: 23px;
+  width: 130px;
+  padding-left: 25px;
+  border: none;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.input-of-search-form3 {
+  margin: 1px 10px;
+  margin-bottom: 5px;
+  height: 23px;
+  width: 160px;
+  padding-left: 25px;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  position: absolute;
+  outline: none;
+  background-color: inherit;
+}
+
+.submit-of-search-form {
+  width: 48px;
+  border-radius: 64px;
+  height: 48px;
+  position: relative;
+  left: 195px;
+  bottom: 19px;
+  background-color: rgb(250, 11, 71);
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  bottom: 21px;
+  left: 212px;
+}
+
+input::placeholder {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  color: grey;
+}
+
+.search-submit-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 64px;
+}
+
+.submit-of-search-form:hover {
+  background-color: rgb(218, 5, 58);
+}
+
+.label-of-search-form:hover {
+  background-color: rgb(228, 223, 223) !important;
+}
+
+.label-of-search-form2:hover {
+  background-color: rgb(228, 223, 223) !important;
+}
+
+.label-of-search-form:checked {
+  background-color: white !important;
+}
+
+.label-of-search-form2:active {
+  background-color: white !important;
+}
+
+/* List Of Hotels */
+.list-of-hotels {
+  width: 100%;
+  height: 900px;
+}
+
+.title-of-hotels-container {
+  padding-left: 80px;
+  margin: 35px 0;
+  letter-spacing: 0.7px;
+  word-spacing: 0.7px;
+}
+
+.container-of-hotels {
+  height: 316.25px;
+  margin: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-list {
+  height: 316px;
+}
+
+.hotel-list-img {
+  height: 274.25px;
+  width: 274.25px;
+  border-radius: 8px;
+}
+
+.title-of-hotel-list {
+  position: relative;
+  bottom: 10px;
+}
+
+.link-of-list-hotel {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.rent-house {
+  margin: 60px 80px;
+  height: 402px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-image: url(' https://a0.muscache.com/im/pictures/2595054e-d1d9-4fde-8046-58d51fcb3164.jpg?im_w=1200');
+}
+
+.title-of-rent-house {
+  width: 400px;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 40px;
+  position: relative;
+  top: 80px;
+  left: 70px;
+  letter-spacing: 0.8px;
+}
+
+.additional-info-about-rent {
+  width: 400px;
+  position: relative;
+  top: 70px;
+  left: 70px;
+}
+
+.detail-input {
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  left: 70px;
+  color: #484848;
+  cursor: pointer;
+}
+
+.footer {
+  height: 60px;
+  border-top: 1px solid #dddddd;
+  background-color: #f7f7f7;
+  display: flex;
+  position: relative;
+  font-size: medium;
+  margin: 0;
+}
+
+.footer-inner {
+  display: flex;
+  margin: 0 80px;
+  justify-content: space-between;
+  align-items: center;
+  color: #222222;
+}
+
+.footer-left-side {
+  float: left;
+  display: flex;
+  text-decoration: none;
+}
+
+.footer-right-side {
+  float: right;
+  justify-content: space-between;
+  margin-left: 600px;
+}
+
+.footer-nav {
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #222222;
+}
+
+/* Login Page */
+
+.input-container {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), #fff;
+  position: absolute;
+  font-family: sans-serif;
+}
+
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+}
+
+.logotip {
+  margin: 0 76px;
+}
+.button-box {
+  width: 220px;
+  margin: 20px auto;
+  margin-bottom: 35px;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+  display: flex;
+}
+
+.toggle-btn {
+  padding: 10px 28px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  color: #222222;
+}
+
+#register-button {
+  background-color: #dddddd;
+  border-radius: 30px;
+  width: 119.5px;
+}
+
+#login-button {
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.social-icons a {
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  color: rgb(16, 16, 243);
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.login-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.check-box {
+  margin: 30px 10px 30px 0;
+}
+
+#span {
+  color: #777;
+  font-size: 12px;
+  bottom: 64px;
+  position: absolute;
+}
+
+#login {
+  left: 50px;
+}
+
+/* Admin Login */
+
+.admin-login-box {
+  width: 200px;
+  margin: 20px auto;
+  margin-bottom: 35px;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+  display: flex;
+  background-color: #dddddd;
+}
+
+.admin-login-box h2 {
+  margin-left: 30px;
+}

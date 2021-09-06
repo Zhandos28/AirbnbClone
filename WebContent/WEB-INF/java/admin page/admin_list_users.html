@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Admin</title>
+	<!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- TABLE STYLES-->
+    <link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="admin_index.html"><strong><i class="icon fa fa-plane"></i> ADMIN</strong></a>
+				<div id="sideNav" href="">
+		          <i class="fa fa-bars icon"></i> 
+		        </div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="admin_index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-user"></i> Admins<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="admin_list_admin.html">User Admin</a>
+                            </li>
+                            <li>
+                                <a href="admin_add_admin.html">Add New Admin</a>
+                            </li>
+							</ul>
+					</li>
+                    <li>
+                        <a class="active-menu" href="#"><i class="fa fa-users"></i> Users<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="admin_list_users.html">User List</a>
+                            </li>
+                            <li>
+                                <a href="admin_add_user.html">Add New User</a>
+                            </li>
+							</ul>
+					</li>	                
+                </ul>
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+		  <div class="header"> 
+                        <h1 class="page-header">
+                            Users<small>User list</small>
+                        </h1>
+						<ol class="breadcrumb">
+					  <li><a href="#">Home</a></li>
+					  <li><a href="#">Users</a></li>
+					  <li class="active">User List</li>
+					</ol> 
+									
+		</div>
+		
+            <div id="page-inner">    
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             User list
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First name</th>
+                                            <th>Last name</th>
+                                            <th>Email</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="info">
+                                            <td>1</td>
+                                            <td>Alisher</td>
+                                            <td>Kassymbek</td>
+                                            <td>kassymbek@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>2</td>
+                                            <td>Yerkebulan</td>
+                                            <td>Murattaly</td>
+                                            <td>murattaly@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>3</td>
+                                            <td>Zhandos</td>
+                                            <td>Duisen</td>
+                                            <td>duisen@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>4</td>
+                                            <td>Bauyrzhan</td>
+                                            <td>Yerkeshov</td>
+                                            <td>yerkeshov@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>5</td>
+                                            <td>Zayaan</td>
+                                            <td>Moran</td>
+                                            <td>moran@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>6</td>
+                                            <td>Rick</td>
+                                            <td>Daniels</td>
+                                            <td>daniels@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>7</td>
+                                            <td>Sammy</td>
+                                            <td>Vaughan</td>
+                                            <td>vaughan@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>8</td>
+                                            <td>Lilianna</td>
+                                            <td>Rivers</td>
+                                            <td>rivers@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>9</td>
+                                            <td>Dominick</td>
+                                            <td>Jocek</td>
+                                            <td>jocek@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>10</td>
+                                            <td>Elisa</td>
+                                            <td>Boyle</td>
+                                            <td>boyle@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>11</td>
+                                            <td>Kester</td>
+                                            <td>Haney</td>
+                                            <td>haney@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>12</td>
+                                            <td>Colm</td>
+                                            <td>Knox</td>
+                                            <td>knox@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>13</td>
+                                            <td>Lyndon</td>
+                                            <td>Hainess</td>
+                                            <td>hainess@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>14</td>
+                                            <td>Laurel</td>
+                                            <td>Bernal</td>
+                                            <td>bernal@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>15</td>
+                                            <td>Owen</td>
+                                            <td>Kelly</td>
+                                            <td>kelly@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>16</td>
+                                            <td>Solomon</td>
+                                            <td>Hull</td>
+                                            <td>hull@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>17</td>
+                                            <td>Katie</td>
+                                            <td>Love</td>
+                                            <td>love@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>18</td>
+                                            <td>Shuabib</td>
+                                            <td>Pearce</td>
+                                            <td>pearce@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>19</td>
+                                            <td>Kaleb</td>
+                                            <td>Lugo</td>
+                                            <td>lugo@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>20</td>
+                                            <td>Pablo</td>
+                                            <td>Eskabaro</td>
+                                            <td>eskabaro@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>21</td>
+                                            <td>Mamie</td>
+                                            <td>Mclellan</td>
+                                            <td>mclellan@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>22</td>
+                                            <td>Melody</td>
+                                            <td>Mya</td>
+                                            <td>mya@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>23</td>
+                                            <td>Jaydn</td>
+                                            <td>Redman</td>
+                                            <td>redman@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>24</td>
+                                            <td>Roma</td>
+                                            <td>Rogrigo</td>
+                                            <td>rogrigo@gmail.com</td>
+                                            <td><button type="submit" class="btn btn-default"><i class="fa fa-trash-o"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End User Tables -->
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- /. PAGE INNER  -->
+    </div>
+     <!-- /. PAGE WRAPPER  -->
+     <!-- /. WRAPPER  -->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+     <!-- DATA TABLE SCRIPTS -->
+    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+         <!-- Custom Js -->
+    <script src="assets/js/custom-scripts.js"></script>
+</body>
+</html>
